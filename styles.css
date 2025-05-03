@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+/* nav design */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(217, 247, 248);
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    font-family: "Righteous", sans-serif;
+    font-weight: 200;
+    z-index: 1;
+
+}
+
+#navbar>ul>li {
+    margin: 25px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(13, 48, 92);
+}
+
+/* main */
+
+
+/* main > welcome section design */
+#welcome-section {
+    background-color: rgb(144, 205, 207);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#welcome-section h1,
+.welcome {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-size: 3em;
+    font-style: normal;
+    width: inherit;
+    text-align: center;
+}
+
+#welcome-section p {
+    color: rgb(11, 134, 128);
+}
+
+.waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    15% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    30% {
+        transform: rotate(-8.0deg)
+    }
+
+    40% {
+        transform: rotate(14.0deg)
+    }
+
+    50% {
+        transform: rotate(-4.0deg)
+    }
+
+    60% {
+        transform: rotate(10.0deg)
+    }
+
+    70% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+/* main > project */
+
+#projects h1 {
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 20px;
+    letter-spacing: 10px;
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 10px 5px 15px rgb(85, 85, 135);
+    color: rgb(43, 37, 27)
+}
+
+#projects {
+    width: inherit;
+    padding: 50px;
+    font-family: "Righteous", sans-serif;
+    background-color: cadetblue;
+    box-sizing: border-box;
+
+
+}
+
+.project-tile {
+    box-shadow: 5px 5px 10px rgba(19, 8, 172, 0.338);
+
+}
+
+.project-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.project-image {
+    width: 100%;
+    height: calc(100% - 4rem);
+    object-fit: cover;
+}
+
+img {
+    display: block;
+
+}
+
+.project-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#projects .project-tile {
+    /* border: 2px solid black;  */
+    background-color: rgb(108, 118, 171);
+}
+
+.code {
+    color: rgb(108, 118, 171);
+    transition: color 0.3s ease-out;
+
+}
+
+.project-tile:hover .code {
+    color: rgb(255, 72, 0);
+}
+
+/* for show all btn */
+
+.btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    box-shadow: 5px 5px;
+    text-align: center;
+    align-content: center;
+    margin: 50px auto;
+    background-color: rgb(172, 186, 248);
+}
+
+.code-show {
+    color: rgb(172, 186, 248);
+    transition: color 0.3s ease-out;
+}
+
+.btn:hover .code-show {
+    color: rgb(255, 72, 0);
+}
+
+/* main > contact */
+#contact {
+    position: relative;
+    background-color: rgb(62, 109, 110);
+    width: inherit;
+    height: 90vh;
+    align-content: center;
+    font-family: "VT323", monospace;
+    text-align: center;
+
+}
+
+#contact h1 {
+    font-size: 70px;
+    margin: 0 auto;
+    color: azure;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 5rem;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.connect-text {
+    font-size: 1rem;
+    display: block;
+    color: rgb(62, 109, 110);
+    transform: color 0.3s ease-out;
+}
+
+.connect1 {
+    color: rgb(224, 53, 204);
+}
+
+.connect2 {
+    color: rgb(0, 0, 0);
+}
+
+.connect3 {
+    color: rgb(34, 111, 226);
+}
+
+.connect4 {
+    color: rgb(193, 11, 11);
+}
+
+.connect1:hover {
+    text-shadow: 5px 10px 20px rgb(58, 56, 56);
+
+    .connect-text {
+        color: rgb(224, 53, 204);
+    }
+}
+
+.connect2:hover {
+    text-shadow: 5px 10px 20px rgb(58, 56, 56);
+
+    .connect-text {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.connect3:hover {
+    text-shadow: 5px 10px 20px rgb(58, 56, 56);
+
+    .connect-text {
+        color: rgb(34, 111, 226);
+    }
+}
+
+.connect4:hover {
+    text-shadow: 5px 10px 20px rgb(58, 56, 56);
+
+    .connect-text {
+        color: rgb(193, 11, 11);
+    }
+}
+
+
+
+/* footer */
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 4px solid red;
+    background-color: rgb(36, 65, 66);
+    color: azure;
+    font-size: large;
+    font-family: "Righteous", sans-serif;
+    word-spacing: 7px;
+    height:10vh;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* media query */
+
+@media (max-width: 28.75em) {
+    #welcome-section > h1 {
+      font-size: 4rem;
+    }
+  }
