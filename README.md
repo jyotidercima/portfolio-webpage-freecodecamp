@@ -4,3 +4,7 @@
 In coming days I will be updating this project to fully fuctional clickable projects to showcase and also improve the webpage. 
 
 for now you can check out my project how it is using --> this [link](https://portfolio-webpage-freecodecamp.vercel.app/)
+
+Screenshort of the project is as follows:
+
+[127 0 0 1_3000_portfolio_index html](https://github.com/user-attachments/assets/8ad653ac-fc17-4f34-881d-0b2a187dc667)
